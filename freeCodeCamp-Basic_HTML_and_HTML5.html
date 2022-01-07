@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <!--
+      This file contains HTML examples gleaned from https://www.freecodecamp.org.
+      Curriculum: Responsive Web Development
+      Course: Basic HTML and HTML5
+  -->
+
+  <main>
+    <h1>Table of Contents</h1>
+    <ol>
+      <li><a href="#header1">h1</a></li>
+      <li><a href="#header2">h2</a></li>
+      <li><a href="#paragraph1">Paragraph 1</a></li>
+      <li><a href="#uList">Unordered List</a></li>
+      <li><a href="#paragraph2">Paragraph 2</a></li>
+    </ol>
+  </main>
+
+  <p>Welcome to a simple webpage created to practice using the information conveyed in "Basic HTML and HTML5" on freeCodeCamp.org!</p>
+
+  <h1 id="header1">This is an h1 Header</h1>
+
+  <h2 id="header2">This is an h2 Header</h2>
+
+  <p id="paragraph1">This is a paragraph of text.</p>
+
+  <p>The following text is the classic dummy text "Lorem ipsum..." lifted from Cicero's writings.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <ul id="uList">
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+    <li>List Item 4</li>
+    <li>List Item 5</li>
+  </ul>
+
+  <a href="#">This is a dead link.</a>
+
+  <p id="paragraph2"><a href="https://www.freecodecamp.org" target="_blank">This is a link</a> to freeCodeCamp's website.</p>
+
+  <p>Please sign our visitor list:</p>
+  <form action="#">
+    <label for="name"><input id="name" type="text" placeholder="Name" required></label><br>
+
+    <p>What brought you here?</p>
+    <label for="word"><input id="word" type="checkbox" name="source"> Word of mouth</label><br>
+    <label for="browse"><input id="browse" type="checkbox" name="source"> Browsing</label><br>
+    <label for="other"><input id="other" type="checkbox" name="source"> Other</label><br><br>
+
+    <p>What do you think of this webpage?  It is...</p>
+    <label for="great"><input id="great" type="radio" name="opinion">Great</label><br>
+    <label for="good"><input id="good" type="radio" name="opinion">Good</label><br>
+    <label for="meh"><input id="meh" type="radio" name="opinion">Meh</label><br>
+    <label for="bad"><input id="bad" type="radio" name="opinion">Bad</label><br><br>
+    <button type="submit">Submit</button><br>
+  </form>
+
+  <!--
+    <img src="(location of pic)" alt="This is a picture">
+    This is the Image element for embedding a picture into a webpage.
+    This element is self-closing and therefore needs no closing element.
+
+    Attributes:
+      src - attribute to specify the location of the image to be shown. Could be a filepath or a URL?
+      alt - attribute to specify what should be shown if the image is unable to load.
+  -->
+
+  <!--
+    <p>
+    This is the Paragraph element for including a paragraph of text in a webpage.
+    A blank line automatically falls between this paragraph and the next item on the page.
+  -->
+
+  <!--
+    <a href="(link)" target="_blank">Anchor text</a>
+    This is the Anchor element which is used to embed hyperlinks into a webpage.
+    Other elements, such as an image, may be placed within an anchor element to turn them into links.
+
+    Attributes:
+      href - attribute to specify the destination of the link.  Could be a URL or an ID.
+        "#" alone creates a dead link, though JavaScript may be used to insert a link separately
+        "#(id)" creates a link to the element on the same page labeled with this ID
+      target - attribute to specify how this link should be opened
+        "_blank" opens the link in a new tab/window
+  -->
+
+  <!--
+    <ul> and <li>
+    These are the Unordered List element and the accompanying element for identifying separate items in the bulleted list.
+
+    <ol>
+    This is the Ordered List element and also uses <li> nested within it for identifying items to be numbered.
+  -->
+
+  <!--
+    <input type="(input type)" placeholder="(Placeholder text)" required name="(name of input group)" value="(name of value)">
+    This is the Input element for including a textbox or other means of receiving user input.
+
+    Attributes:
+      type - attribute to specify the type of input
+      placeholder - attribute to specify text that will populate the input until the user replaces it
+      required - attribute to specify that the element must be completed to submit the form
+      name - attribute to specify by which name the input value will be referred by the receiving server
+        - For radio buttons only: to which group of related radio buttons this belongs
+        - Functionality for checkboxes similar to radio buttons?  A set of related checkboxes should also be tagged with the same name.
+      value - attribute to specify what value in "name=value" pair passed to the server when form is submitted.
+        - Necessary for checkboxes, radiobuttons, and the like
+      checked - attribute to specify that this checkbox or radiobutton should be checked by default (to start)
+  -->
+
+  <!--
+    <form action="(URL to send to?)">
+    The Form element for requesting information from the user.  Elements nesetd within will specify the information requested.
+
+    action - attribute to specify the URL or other destination for the form responses
+
+    Elements nested within:
+      input
+      button
+      ...
+  -->
+
+  <!--
+    <label>
+    The Label element for assigning a caption to a form element.
+    Frequently used in conjunction with <input> where <input> is nested within the Label element.
+
+    Attributes:
+      for - attribute to specify to which form element this label is linked (should match id of element)
+  -->
+
+  <!--
+    <div>
+    The Division element groups related elements by nesting them within.
+    Attributes and CSS (?) then allow for easy formatting of elements nested within each Division element.
+  -->
+
+  <!--
+    <html>
+    The HTML element serves as the root element in which all other HTML elements are nested.
+    Head and Body elements may provide the next layer of nested elements to build another layer of organization into a webpage.
+
+    <head>
+    The Head element may be nested within the HTML element.
+    Webpage metadata is typically (by convention?) specified within the Head element.
+
+    <body>
+    The Body element may be nested within the HTML element.
+  -->
+
+  <!--
+    What other notes do I wish to record?
+    id - global attribute to assign a unique ID to any element.
+    <br> - inserts a line break
+    Opening <!DOCTYPE html> element declares which version of HTML is used in this file.  "html" refers to HTML5 (most recent) at the time that this file was made.
+  -->
+
+</html>
